@@ -29,7 +29,6 @@
 #footertext
 {
 	font-size: 14px;
-	
   	text-align: right;
 	padding-right: 15px;
 }
@@ -52,5 +51,45 @@
 	background: #546E7A;
 	min-height: 1000px;
 }
+/* Text within main divider */
+#maintext
+{
+	position: relative;
+	font-size: 16px;
+	text-align: left;
+	bottom: 20;
+}
+
+/* Sidebar */
+#leftdiv
+{
+	
+	float: left; 
+	width: 20%; 
+	background: #78909C; 
+	min-height: 1000px
+}
+/* Styling for images in sidebar */
+#imagepreview 
+{
+
+	position: relative; 
+	height: 100px;
+	padding-left: 10px; 
+	padding-bottom: 20px;
+	
+}
+
+/* Styling for image container */
+#imagecontainer
+{
+	position: relative; 
+	left: 0; 
+	top: 150; 
+	float: left
+}
+	
+
+
 	
 	
