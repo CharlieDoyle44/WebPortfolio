@@ -50,6 +50,14 @@
 	width: 80%;
 	background: #546E7A;
 	min-height: 1000px;
+	
+}
+/* Colorscheme and formating for the main div */
+#bodycolor
+{
+	background-color: #78909C;
+	margin:0;
+	padding:0;
 }
 /* Text within main divider */
 #maintext
@@ -67,7 +75,10 @@
 	float: left; 
 	width: 20%; 
 	background: #78909C; 
-	min-height: 1000px
+	min-height: 1000px;	
+	margin:0;
+	padding:0;
+
 }
 /* Styling for images in sidebar */
 #imagepreview 
