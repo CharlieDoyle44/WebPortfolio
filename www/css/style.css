@@ -64,21 +64,33 @@
 /* Text within main divider */
 #maintext
 {
-	position: relative;
+	
 	font-size: 16px;
 	text-align: left;
-	top: 150;
+	padding: 35px;
 	
+	
+}
+
+/*Divider which contains text on pages */
+#textdiv
+{
+	position: relative;
+	top: 150;
+
+
 }
 
 /*Titles used in text*/
 #Title1
 {
 	font-size: 25px;
-	text-align: center;
+	font-family: Arial;
+	text-align: left;
+	padding: 30px;
 	
 	
-
+}
 /* Sidebar */
 #leftdiv
 {
