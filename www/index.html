@@ -29,45 +29,45 @@
 			<div id="textdiv">
 	<!--Page content -->
 				<p> 
-				<span id="title1"> Welcome </span>
+				<span class="title1"> Welcome </span>
 				<br><br>
-				<span id="maintext"> Welcome to my site. This site is intended to be used as a portfolio site to showcase my various projects such as unreal engine maps, 3D models and more! </span>
-				<br> <span id="maintext">This site also includes my CV and a means of contacting me.</span>
-				<br><br> <span id="title1"> About Me </span>
-				<br> <span id="maintext"> My name is Charlie Doyle and I am an 19 year old currently enrolled in Bourenmouth Univsersity studying Games Design.</span>
-				<br> <span id="maintext"> For many years I have had an interest in Games but more recently that interest has deepened to apreciate the art of Game Design and how games are developed. </span>
-	<!-- Slideshow -->	
+				<span class="maintext"> Welcome to my site. This site is intended to be used as a portfolio site to showcase my various projects such as unreal engine maps, 3D models and more! </span>
+				<br> <span class="maintext">This site also includes my CV and a means of contacting me.</span>
+				<br><br> <span class="title1"> About Me </span>
+				<br> <span class="maintext"> My name is Charlie Doyle and I am an 19 year old currently enrolled in Bourenmouth Univsersity studying Games Design.</span>
+				<br> <span class="maintext"> For many years I have had an interest in Games but more recently that interest has deepened to apreciate the art of Game Design and how games are developed. </span>
 			</div>
+	<!-- Slideshow -->	
 			<!-- Image 1 -->
 			<div class="slideshowcontainer">
 				<div class="slides fade">
-					</div class="numbertext">1 / 3</div>
+					<div class="numbertext">1 / 3</div>
 					<img src="images/odst.jpg" style="100%">
-					</div class="imagetext">jpg</div>
+					<div class="imagetext">jpg</div>
 			</div>
 			<!-- Image 2 -->
 			<div class="slideshowcontainer">
 				<div class="slides fade">
-					</div class="numbertext">2 / 3</div>
+					<div class="numbertext">2 / 3</div>
 					<img src="images/cursedcat2.jpg" style="100%">
-					</div class="imagetext">jpg</div>
+					<div class="imagetext">jpg</div>
 			</div>
 			<!-- Image 3 -->
 			<div class="slideshowcontainer">
 				<div class="slides fade">
-					</div class="numbertext">3 / 3</div>
+					<div class="numbertext">3 / 3</div>
 					<img src="images/placeholderimage.png" style="100%">
-					</div class="imagetext">jpg</div>
+					<div class="imagetext">jpg</div>
 			</div>
 			<!-- Navigation arrows -->
-			<a class="prev" onclick="">&#10094;</a>
-			<a class="next" onclick="">&#10095;</a>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
 		<br>
 		<div style="text-allign:center">
-			<span class="dot" onclick=""></span>
-			<span class="dot" onclick=""></span>
-			<span class="dot" onclick=""></span>
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
 		</div>
 		 
 		
@@ -85,7 +85,48 @@
 		</div>
 		
 		 
+		<script>
+	<!--Javascript for slideshow-->
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		<!-- Controls for navigating slides -->
+		function plusSlides(n) 
+		{
+			showSlides(slideIndex += n);
+		}
+		<!--controls for image thumbnail -->
+		function currentSlide(n) 
+		{
+			showSlides(slideIndex = n);
+		}
 		
+		function showSlides(n)
+		{
+			var i;
+			var slides = document.getElementsByClassName("slides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length)
+			{
+				slideIndex = 1
+				
+			}
+			if(n < 1)
+			{
+				slideIndex = slides.length;
+			}
+			
+			for (i = 0; i < slides.length; i++)
+			{
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++)
+			{
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+		</script>
 
 </body>
 </html>
