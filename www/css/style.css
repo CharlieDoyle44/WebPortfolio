@@ -77,7 +77,7 @@
 #textdiv
 {
 	position: relative;
-	top: 150;
+	top: 550;
 
 
 }
@@ -111,6 +111,7 @@
 
 	position: relative; 
 	height: 100px;
+	width:100px;
 	padding-left: 10px; 
 	padding-bottom: 20px;
 	
@@ -135,16 +136,24 @@ img
 {
 	vertical-align: middle;
 	max-height: 500px;
+	height: 400px;
+	width: 1200px;
+	
+	
+	
 }
 
+/* Slideshow container */
 .slideshowcontainer
 {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
-
+	top: -30;
+	
 }
 
+/* Previous and Next buttons */
 .prev, .next
 {
 	cursor: pointer;
@@ -161,16 +170,19 @@ img
 	
 }
 
+/* Positions the next button to the right */
 .next{
 	right:0;
 	border-radius: 3px 0 0 3px;
 }
 
+/* Adds a black background to the arrows */
 .prev:hover, .next:hover
 {
 	background-color: rgba(0,0,0,0.8);
 }
 
+/* Caption text for the images */
 .imagetext
 {
 	color: #F2F2F2;
@@ -182,6 +194,7 @@ img
 	text-align: center;
 }
 
+/* Displays which image you are on */
 .numbertext
 {
 	color: #F2F2F2;
@@ -191,6 +204,7 @@ img
 	top: 0;
 }
 
+/* The dots displayed below the image */
 .dot
 {
 	cursor: pointer;
@@ -208,6 +222,7 @@ img
 	background-color: #717171;
 }
 
+/* Fading animation for changing image */
 .fade 
 {
 	-webkit-animation-name: fade;
