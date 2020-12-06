@@ -90,9 +90,8 @@
 	font-family: Arial;
 	text-align: left;
 	padding: 30px;
-	
-	
 }
+
 /*Subtitles used in text*/
 .Title2
 {
@@ -100,8 +99,23 @@
 	font-family: Arial;
 	text-align: left;
 	padding: 30px;
-	
-	
+}
+
+/*Second subtitles used in text */
+.Title3
+{
+	font-size: 18px;
+	font-family: Arial;
+	text-align: left;
+	padding: 30px;
+}
+
+
+/* Showcase images for 3d models */
+.modelimages
+{
+	width: 500px;
+	padding: 8px;
 }
 /* Sidebar */
 #leftdiv
