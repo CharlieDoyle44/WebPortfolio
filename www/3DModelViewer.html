@@ -1,0 +1,65 @@
+<html>
+<!--<body style="background-image: url('images/Background.jpg');">-->
+<body id="bodycolor">
+	<head>
+		<title> Medieval Helmet Model </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	</head>
+		<!--3D model viewer component -->
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	<body>
+	
+	<!-- Left divider with images -->
+		<div id="leftdiv"> 
+		<div id="imagecontainer">
+		 <p>
+		 <a href="projects.html#alley"><img id="imagepreview" src="images/Alley.png"></a> 
+		 <a href="projects.html#cowboy"><img id="imagepreview" src="images/Cowboy.png"></a>
+		 <a href="projects.html#helmet"><img id="imagepreview" src="images/helmet1 thumbnail.png"></a>
+		 </p>
+		<!--Second line of images -->
+		 <p>
+		 <a  href="projects.html"><img id="imagepreview" src="images/placeholderimage.png"></a>
+		 <a  href="projects.html"><img id="imagepreview" src="images/placeholderimage.png"></a>
+		 <a  href="projects.html"><img id="imagepreview" src="images/placeholderimage.png"></a>
+		 </p>
+		</div>
+		</div>
+		
+	<!-- Main divider -->
+		<div id="body"> 
+			<div id="textdiv" style="top: 150">
+	<!--Page content -->
+				<p> 
+				<span class="title1"> Medieval Helmet Model </span>
+				<br><br>
+				<span class="maintext"> Click and drag to view the 3D model </span>
+				<br>
+				<span class="maintext"> <a href="projects.html#helmet"> Click here to return to where you were</a> </span>
+				<br><br>
+				<model-viewer skybox-image="images/street.hdr" style="height: 600px; width: 600px; padding-left: 25px;" src="3D Models/Medieval helmet/scene.gltf" camera-controls></model-viewer>
+				<br><br>
+				
+				
+				</p>
+			</div>
+		
+	<!--Header bar-->
+		<div id="header">
+		Charlie Doyle's Portfolio Site
+		<div id="links">
+		<a href="index.html"> Home </a> | <a href="contact.html"> Contact </a> | <a href="cv.html"> CV </a>  | <a href="projects.html"> Projects </a>
+		</div>
+		</div>
+		
+	<!--Footer-->
+		<div id="footer">
+		<p id="footertext"> Email: charliedoyle44@outlook.com <br> Mobile: 07575986744 </p>
+
+		<p id="footertextleft"> Models provided by Kacper Korzybski and Sebastian Sosnowski </p>
+		</div>
+		 
+		
+
+</body>
+</html>
