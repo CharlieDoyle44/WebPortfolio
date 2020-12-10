@@ -11,7 +11,16 @@
 	color: #294B93;
 	font-family: Calibri;
 	font-size: 25;
-	
+}
+
+/* Links styling */
+#links
+{
+	font-size: 20px;
+	text-align: right;
+	position: relative;
+	float: right;
+	padding-right: 15px;
 }
 
 /* Footer bar styling */
@@ -33,6 +42,7 @@
 	padding-right: 15px;
 	float: right;
 }
+
 /* Left hand Text in footer */
 #footertextleft
 {
@@ -43,14 +53,39 @@
 	
 }
 
-/* Links styling */
-#links
+/* Sidebar */
+#leftdiv
 {
-	font-size: 20px;
-	text-align: right;
-	position: relative;
-	float: right;
-	padding-right: 15px;
+	
+	float: left; 
+	width: 20%; 
+	background: #78909C; 
+	min-height: 1000px;	
+	margin:0;
+	padding:0;
+	
+
+}
+
+/* Styling for images in sidebar */
+#imagepreview 
+{
+
+	position: relative; 
+	height: 100px;
+	width:100px;
+	padding-left: 10px; 
+	padding-bottom: 20px;
+	
+}
+
+/* Styling for image container */
+#imagecontainer
+{
+	position: relative; 
+	left: 0; 
+	top: 150; 
+	float: left
 }
 
 /* Main divider */
@@ -58,9 +93,7 @@
 {
 	float:right;
 	width: 80%;
-	min-height: 1000px;	
-	
-	
+	min-height: 1000px;		
 }
 
 /* Colorscheme and formating for the main div */
@@ -69,18 +102,7 @@
 	
 	background: #546E7A;
 	margin:0;
-	padding:0;
-	
-}
-/* Text within main divider */
-.maintext
-{
-	
-	font-size: 16px;
-	font-family: Arial;
-	text-align: left;
-	padding: 35px;
-	
+	padding:0;	
 	
 }
 
@@ -88,9 +110,16 @@
 #textdiv
 {
 	position: relative;
+}
+
+/* Text within main divider */
+.maintext
+{
 	
-
-
+	font-size: 16px;
+	font-family: Arial;
+	text-align: left;
+	padding: 35px;	
 }
 
 /*Titles used in text*/
@@ -120,45 +149,11 @@
 	padding: 30px;
 }
 
-
 /* Showcase images for 3d models */
 .modelimages
 {
 	width: 500px;
 	padding: 8px;
-}
-/* Sidebar */
-#leftdiv
-{
-	
-	float: left; 
-	width: 20%; 
-	background: #78909C; 
-	min-height: 1000px;	
-	margin:0;
-	padding:0;
-	
-
-}
-/* Styling for images in sidebar */
-#imagepreview 
-{
-
-	position: relative; 
-	height: 100px;
-	width:100px;
-	padding-left: 10px; 
-	padding-bottom: 20px;
-	
-}
-
-/* Styling for image container */
-#imagecontainer
-{
-	position: relative; 
-	left: 0; 
-	top: 150; 
-	float: left
 }
 
 /*Slideshow CSS */
@@ -172,10 +167,7 @@
 	vertical-align: middle;
 	max-height: 500px;
 	width: 1000px;
-	height: 300px;
-	
-	
-	
+	height: 300px;	
 }
 
 /* Slideshow container */
@@ -183,9 +175,7 @@
 {
 	max-width: 1000px;
 	position: relative;
-	margin: auto;
-	
-	
+	margin: auto;	
 }
 
 /* Previous and Next buttons */
@@ -201,8 +191,7 @@
 	font-weight: bold;
 	font-size: 18px;
 	border-radius: 0 3px 3px 0;
-	transition: 0.6s ease;
-	
+	transition: 0.6s ease;	
 }
 
 /* Positions the next button to the right */
